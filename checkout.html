@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Varie's Car Mart </title>
+    <link rel="stylesheet" href="style.css">
+    <script src = "script.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Delius+Swash+Caps&family=Roboto:ital,wght@0,100..900;1,100..
+    900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body style="background-image:url('../bg_car.jpeg'); background-size:cover;">
+     <section class = "delivery">
+      <section class = "shipping">
+          <div class="shippin" id = "pship" >
+              <h3> Shipping Details </h3>
+              <div class = "shipping-panel hidden">
+                  <input type = "text" minlength = "2" maxlength = "30" placeholder = "Full Name" required></br>
+                  <input type = "number" minlength = "4" maxlength = "12" placeholder = "Phone Number" required></br>
+                  <input type = "text" minlength = "3" maxlenght = "20" placeholder = "Address Line 1" required></br>
+                  <input type = "text" minlength = "3" maxlenght = "20" placeholder = "Address Line 2"></br>
+                  <input type = "text" minlength = "3" maxlenght = "20" placeholder = "Parish" required></br>
+                  <div class="paymentmethods">
+                      <label> <input type = "radio" name = "paymentmethod" value = "Cheque"> Cheque </label></br>
+                      <label> <input type = "radio" name = "paymentmethod" value = "card"> Credit/Debit Card </label></br>
+                      <label> <input type = "radio" name = "paymentmethod" value = "banktransfer"> Bank Transfer </label></br>  
+                      <label> <input type = "radio" name = "paymentmethod" value = "cash">Cash</label></br>
+                  </div>
+                  <input type = "number" minlength = "3" maxlength = "12" placeholder = "Amount Paid" required></br>
+                                      
+                  <button class = "shipbtn" id = "confirm"> Confirm  </button>
+                  <button class = "shipbtn" id = "cancel"> Cancel </button>
+              </div>
+          </div>
+      </section>
+
+      <section class = "bill">
+        <h3> Bill </h3>
+        <div class = "bill-panel">
+          <p> Total Items: <span id = "totalItems">0</span>
+           </br>Subtotal: $<span id = "subtotal">0.00</span>
+           </br>Tax (15%): $<span id = "taxAmount">0.00</span>
+           </br>Total Price: $<span id = "totalPrice">0.00</span>
+          </p>
+      </section>
+
+    </section>
+  </body>
+</html>
