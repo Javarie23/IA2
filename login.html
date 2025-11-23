@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Varie's Car Mart </title>
+    <link rel="stylesheet" href="style.css">
+    <script src = "script.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Delius+Swash+Caps&family=Roboto:ital,wght@0,100..900;1,100..
+    900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body style="background-image:url('../Assets/img1.png'); background-size:cover;">
+    <header>
+      <div class="main">
+        <div class="logo">
+          <img src="../Assets/logo.png" alt="Varie's logo" class="logo" width = "150" height = "130">
+        </div>
+    </header>
+    
+    <div class = "login">
+      <form onsubmit = "check(event)">
+        <h1> LOGIN </h1>
+        <div class = "input">
+        <input id = "userName" type = "text" minlength = "3" maxlength = "15" placeholder = "Username" required>
+          <i class = 'bx bxs-user'></i>
+        </div>
+        
+        <div class = "input">
+          <input id = "userPword" type = "password" minlength = "3" maxlength = "30" placeholder = "Password" required>
+          <i class = 'bx bxs-lock'></i>
+        </div>
+        <div class = "showpassword">
+          <label><input id = "showpwrd" type = "checkbox" onclick = "showpassword()"> Show Password </label>
+        </div>
+        <button type = "submit" class = "btn"> Login </button>
+
+        <div class = "newuser">
+          <p> Don't have an account?
+            <a href = "register.html"> Register </a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
